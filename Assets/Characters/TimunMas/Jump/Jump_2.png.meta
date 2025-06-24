@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f3e88c2dcb3372b40a99f20ff8830fda
+guid: c2cf4d9c2db60db4f967f67cd5b0d867
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9091825202928407046
-    second: Throw4_0
+      213: -1052045258855429294
+    second: Jump2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Throw4_0
+      name: Jump2_0
       rect:
         serializedVersion: 2
-        x: 676
-        y: 999
-        width: 2022
-        height: 2221
+        x: 706
+        y: 929
+        width: 1962
+        height: 2362
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afd2283062953d180800000000000000
-      internalID: -9091825202928407046
+      spriteID: 25bc94a39626661f0800000000000000
+      internalID: -1052045258855429294
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Throw4_0: -9091825202928407046
+      Jump2_0: -1052045258855429294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
