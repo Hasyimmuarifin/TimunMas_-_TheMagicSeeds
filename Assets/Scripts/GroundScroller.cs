@@ -34,7 +34,7 @@ public class GroundScroller : MonoBehaviour
     {
         // Ganti ini sesuai kebutuhan:
         // Bisa nama scene:
-        SceneManager.LoadScene("SceneLevelBerikutnya");
+        SceneManager.LoadScene("play");
 
         // Atau pakai build index:
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
