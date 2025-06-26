@@ -3,40 +3,43 @@ using UnityEngine.SceneManagement;
 
 public class GroundScroller : MonoBehaviour
 {
+    [Header("Scrolling Settings")]
     public float speed = 2f;
-    public float stopAtX = -50f;
+    public float resetX = 60f;
+    public float stopAtX = -20f;
 
-    public static bool shouldStop = false;
+    [Header("Scene Settings")]
+    [SerializeField] private string sceneToLoad = "kalah";
+    [SerializeField] private int maxLoops = 5;
+    [SerializeField] private bool isCounter = false; // hanya satu GameObject yang mengaktifkan ini!
 
-    private static bool hasLoadedNextScene = false; // agar scene hanya dipanggil sekali
+    private static int loopCount = 0;
+    private static bool hasLoadedScene = false;
 
     void Update()
     {
-        if (!shouldStop)
+        if (hasLoadedScene) return;
+
+        // Geser objek ke kiri
+        transform.position += Vector3.left * speed * Time.deltaTime;
+
+        if (transform.position.x <= stopAtX)
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            // Reset posisi objek ke kanan
+            transform.position = new Vector3(resetX, transform.position.y, transform.position.z);
 
-            if (transform.position.x <= stopAtX)
+            // Hanya GameObject "counter" yang hitung loop
+            if (isCounter)
             {
-                shouldStop = true;
+                loopCount++;
+                Debug.Log($"Loop ke-{loopCount}");
 
-                // Pindah scene hanya sekali
-                if (!hasLoadedNextScene)
+                if (loopCount >= maxLoops)
                 {
-                    hasLoadedNextScene = true;
-                    LoadNextScene();
+                    hasLoadedScene = true;
+                    SceneManager.LoadScene(sceneToLoad);
                 }
             }
         }
-    }
-
-    void LoadNextScene()
-    {
-        // Ganti ini sesuai kebutuhan:
-        // Bisa nama scene:
-        SceneManager.LoadScene("play");
-
-        // Atau pakai build index:
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
