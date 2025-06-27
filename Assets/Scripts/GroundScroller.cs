@@ -21,6 +21,9 @@ public class GroundScroller : MonoBehaviour
     public Animator butoAnimator;
     public GameObject[] awanImages;
     public GameObject logoImage;
+
+    [Header("Delay Transisi")]
+    public float delaySebelumAwan = 2f;        // ⏳ Tambahan: jeda sebelum awan pertama muncul
     public float delayAntarAwan = 0.5f;
     public float delayLogo = 1f;
     public float delaySebelumLoad = 2f;
@@ -51,7 +54,7 @@ public class GroundScroller : MonoBehaviour
                     // 1. Ubah animasi buto ke Idle
                     if (butoAnimator != null)
                     {
-                        butoAnimator.SetTrigger("ToIdle"); // pastikan transisi dibuat di Animator
+                        butoAnimator.SetTrigger("ToIdle"); // pastikan ada transisi di Animator
                     }
 
                     // 2. Tampilkan panel konfirmasi
@@ -69,7 +72,10 @@ public class GroundScroller : MonoBehaviour
 
     IEnumerator TransisiAwan()
     {
-        // 4. Munculkan awan satu per satu
+        // ⏳ 1. Delay sebelum awan pertama
+        yield return new WaitForSeconds(delaySebelumAwan);
+
+        // ☁️ 2. Munculkan awan satu per satu
         foreach (GameObject awan in awanImages)
         {
             if (awan != null)
@@ -79,19 +85,19 @@ public class GroundScroller : MonoBehaviour
             }
         }
 
-        // 5. Munculkan logo
+        // 🌟 3. Munculkan logo setelah delay
         if (logoImage != null)
         {
             yield return new WaitForSeconds(delayLogo);
             logoImage.SetActive(true);
         }
 
-        // 6. Tunggu sebelum load scene
+        // ⏭️ 4. Tunggu sebelum load scene
         yield return new WaitForSeconds(delaySebelumLoad);
         SceneManager.LoadScene(sceneToLoad);
     }
 
-    // Jika kamu ingin tetap ada tombol manual, kamu bisa pakai fungsi ini juga
+    // Opsional: jika ingin pakai tombol manual
     public void LanjutkanKeSceneBerikutnya()
     {
         SceneManager.LoadScene(sceneToLoad);
