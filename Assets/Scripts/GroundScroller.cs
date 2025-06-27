@@ -20,13 +20,16 @@ public class GroundScroller : MonoBehaviour
     [Header("Transisi Animasi")]
     public Animator butoAnimator;
     public GameObject[] awanImages;
+    public CanvasGroup[] awanCanvasGroups;  // CanvasGroup untuk awan fade-in
     public GameObject logoImage;
+    public CanvasGroup logoCanvasGroup;     // CanvasGroup untuk logo fade-in
 
     [Header("Delay Transisi")]
-    public float delaySebelumAwan = 2f;        // ⏳ Tambahan: jeda sebelum awan pertama muncul
+    public float delaySebelumAwan = 2f;
     public float delayAntarAwan = 0.5f;
     public float delayLogo = 1f;
     public float delaySebelumLoad = 2f;
+    public float durasiFade = 1f;
 
     private static int loopCount = 0;
     private static bool hasTriggeredPanel = false;
@@ -54,7 +57,7 @@ public class GroundScroller : MonoBehaviour
                     // 1. Ubah animasi buto ke Idle
                     if (butoAnimator != null)
                     {
-                        butoAnimator.SetTrigger("ToIdle"); // pastikan ada transisi di Animator
+                        butoAnimator.SetTrigger("ToIdle");
                     }
 
                     // 2. Tampilkan panel konfirmasi
@@ -72,32 +75,50 @@ public class GroundScroller : MonoBehaviour
 
     IEnumerator TransisiAwan()
     {
-        // ⏳ 1. Delay sebelum awan pertama
+        // 1. Delay sebelum awan pertama muncul
         yield return new WaitForSeconds(delaySebelumAwan);
 
-        // ☁️ 2. Munculkan awan satu per satu
-        foreach (GameObject awan in awanImages)
+        // 2. Munculkan awan satu per satu dengan fade-in
+        for (int i = 0; i < awanImages.Length; i++)
         {
-            if (awan != null)
+            if (awanImages[i] != null && awanCanvasGroups[i] != null)
             {
-                awan.SetActive(true);
+                awanImages[i].SetActive(true);
+                yield return StartCoroutine(FadeCanvasGroup(awanCanvasGroups[i], 0f, 1f, durasiFade));
                 yield return new WaitForSeconds(delayAntarAwan);
             }
         }
 
-        // 🌟 3. Munculkan logo setelah delay
-        if (logoImage != null)
+        // 3. Delay sebelum logo muncul
+        yield return new WaitForSeconds(delayLogo);
+
+        // 4. Fade-in logo
+        if (logoImage != null && logoCanvasGroup != null)
         {
-            yield return new WaitForSeconds(delayLogo);
             logoImage.SetActive(true);
+            yield return StartCoroutine(FadeCanvasGroup(logoCanvasGroup, 0f, 1f, durasiFade));
         }
 
-        // ⏭️ 4. Tunggu sebelum load scene
+        // 5. Delay sebelum pindah scene
         yield return new WaitForSeconds(delaySebelumLoad);
         SceneManager.LoadScene(sceneToLoad);
     }
 
-    // Opsional: jika ingin pakai tombol manual
+    IEnumerator FadeCanvasGroup(CanvasGroup cg, float from, float to, float duration)
+    {
+        float elapsed = 0f;
+        cg.alpha = from;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            cg.alpha = Mathf.Lerp(from, to, elapsed / duration);
+            yield return null;
+        }
+
+        cg.alpha = to;
+    }
+
     public void LanjutkanKeSceneBerikutnya()
     {
         SceneManager.LoadScene(sceneToLoad);

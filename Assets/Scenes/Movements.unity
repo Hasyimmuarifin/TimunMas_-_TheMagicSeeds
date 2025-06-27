@@ -348,10 +348,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &11790126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -422,6 +426,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &20372706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20372707}
+  - component: {fileID: 20372710}
+  - component: {fileID: 20372709}
+  - component: {fileID: 20372708}
+  m_Layer: 5
+  m_Name: awan6 (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &20372707
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20372706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -809, y: 61}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &20372708
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20372706}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &20372709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20372706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &20372710
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20372706}
+  m_CullTransparentMesh: 1
 --- !u!1 &65372884
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,10 +554,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &65372886
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -909,10 +1005,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &67152837
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -994,6 +1094,7 @@ GameObject:
   - component: {fileID: 73452233}
   - component: {fileID: 73452235}
   - component: {fileID: 73452234}
+  - component: {fileID: 73452236}
   m_Layer: 5
   m_Name: awan1
   m_TagString: Untagged
@@ -1018,7 +1119,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -653, y: 255}
-  m_SizeDelta: {x: 942.78, y: 271.5}
+  m_SizeDelta: {x: 1760, y: 840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73452234
 MonoBehaviour:
@@ -1040,7 +1141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 858395467816698800, guid: c038f67c35aeaf74c8f31b39e185bedb, type: 3}
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1058,6 +1159,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73452232}
   m_CullTransparentMesh: 1
+--- !u!225 &73452236
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73452232}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &129540279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,10 +1211,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &129540281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1401,10 +1518,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &146680747
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1659,10 +1780,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &158375978
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2106,10 +2231,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &162759567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2191,6 +2320,7 @@ GameObject:
   - component: {fileID: 196652594}
   - component: {fileID: 196652596}
   - component: {fileID: 196652595}
+  - component: {fileID: 196652597}
   m_Layer: 5
   m_Name: awan6
   m_TagString: Untagged
@@ -2215,7 +2345,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 374, y: -166}
-  m_SizeDelta: {x: 942.78, y: 271.5}
+  m_SizeDelta: {x: 1760, y: 840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &196652595
 MonoBehaviour:
@@ -2237,7 +2367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 858395467816698800, guid: c038f67c35aeaf74c8f31b39e185bedb, type: 3}
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2255,6 +2385,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196652593}
   m_CullTransparentMesh: 1
+--- !u!225 &196652597
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196652593}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &204816124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,6 +2408,7 @@ GameObject:
   - component: {fileID: 204816125}
   - component: {fileID: 204816127}
   - component: {fileID: 204816126}
+  - component: {fileID: 204816128}
   m_Layer: 5
   m_Name: awan5
   m_TagString: Untagged
@@ -2290,7 +2433,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -46, y: 25}
-  m_SizeDelta: {x: 942.78, y: 271.5}
+  m_SizeDelta: {x: 1760, y: 840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204816126
 MonoBehaviour:
@@ -2312,7 +2455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 858395467816698800, guid: c038f67c35aeaf74c8f31b39e185bedb, type: 3}
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2330,6 +2473,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204816124}
   m_CullTransparentMesh: 1
+--- !u!225 &204816128
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204816124}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &273213596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,7 +2516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.82641506, g: 0.82641506, b: 0.82641506, a: 0.05882353}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2404,7 +2559,21 @@ RectTransform:
   - {fileID: 627629818}
   - {fileID: 204816125}
   - {fileID: 196652594}
-  - {fileID: 1352876068}
+  - {fileID: 1721771534}
+  - {fileID: 1552267738}
+  - {fileID: 943884932}
+  - {fileID: 468158586}
+  - {fileID: 361096032}
+  - {fileID: 769212230}
+  - {fileID: 1476300546}
+  - {fileID: 713329924}
+  - {fileID: 2114510237}
+  - {fileID: 1650661325}
+  - {fileID: 1426391107}
+  - {fileID: 1646714826}
+  - {fileID: 1312442814}
+  - {fileID: 20372707}
+  - {fileID: 1395427084}
   m_Father: {fileID: 1442096858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2522,10 +2691,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &341741450
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2755,10 +2928,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &360094390
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2973,6 +3150,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &361096031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 361096032}
+  - component: {fileID: 361096035}
+  - component: {fileID: 361096034}
+  - component: {fileID: 361096033}
+  m_Layer: 5
+  m_Name: awan6 (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &361096032
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361096031}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 665, y: -39}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &361096033
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361096031}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &361096034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361096031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &361096035
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361096031}
+  m_CullTransparentMesh: 1
 --- !u!1 &366500438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,10 +3467,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &366500441
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3316,10 +3585,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &371100974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3833,10 +4106,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!1 &420703282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,10 +4420,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &435276759
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4560,10 +4841,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &465689214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4634,6 +4919,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &468158585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468158586}
+  - component: {fileID: 468158589}
+  - component: {fileID: 468158588}
+  - component: {fileID: 468158587}
+  m_Layer: 5
+  m_Name: awan6 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &468158586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468158585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 525, y: -420}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &468158587
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468158585}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &468158588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468158585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &468158589
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468158585}
+  m_CullTransparentMesh: 1
 --- !u!1 &530483746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,10 +5123,48 @@ MonoBehaviour:
   - {fileID: 627629817}
   - {fileID: 204816124}
   - {fileID: 196652593}
-  logoImage: {fileID: 1352876065}
-  delayAntarAwan: 0.5
+  - {fileID: 1721771533}
+  - {fileID: 1552267737}
+  - {fileID: 943884931}
+  - {fileID: 468158585}
+  - {fileID: 361096031}
+  - {fileID: 769212229}
+  - {fileID: 1476300545}
+  - {fileID: 713329923}
+  - {fileID: 2114510236}
+  - {fileID: 1650661324}
+  - {fileID: 1426391106}
+  - {fileID: 1646714825}
+  - {fileID: 1312442813}
+  - {fileID: 20372706}
+  awanCanvasGroups:
+  - {fileID: 73452236}
+  - {fileID: 562549470}
+  - {fileID: 1870667841}
+  - {fileID: 627629821}
+  - {fileID: 204816128}
+  - {fileID: 196652597}
+  - {fileID: 1721771535}
+  - {fileID: 1552267739}
+  - {fileID: 943884933}
+  - {fileID: 468158587}
+  - {fileID: 361096033}
+  - {fileID: 769212231}
+  - {fileID: 1476300547}
+  - {fileID: 713329925}
+  - {fileID: 2114510238}
+  - {fileID: 1650661326}
+  - {fileID: 1426391108}
+  - {fileID: 1646714827}
+  - {fileID: 1312442815}
+  - {fileID: 20372708}
+  logoImage: {fileID: 1395427080}
+  logoCanvasGroup: {fileID: 1395427081}
+  delaySebelumAwan: 2
+  delayAntarAwan: 0.1
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 0.2
 --- !u!60 &530483750
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4983,10 +5394,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &532125749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5257,6 +5672,7 @@ GameObject:
   - component: {fileID: 562549467}
   - component: {fileID: 562549469}
   - component: {fileID: 562549468}
+  - component: {fileID: 562549470}
   m_Layer: 5
   m_Name: awan2
   m_TagString: Untagged
@@ -5281,7 +5697,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -276, y: -270}
-  m_SizeDelta: {x: 942.78, y: 271.5}
+  m_SizeDelta: {x: 1760, y: 840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &562549468
 MonoBehaviour:
@@ -5303,7 +5719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 858395467816698800, guid: c038f67c35aeaf74c8f31b39e185bedb, type: 3}
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5321,6 +5737,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562549466}
   m_CullTransparentMesh: 1
+--- !u!225 &562549470
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562549466}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &598005260
 GameObject:
   m_ObjectHideFlags: 0
@@ -5411,6 +5839,7 @@ GameObject:
   - component: {fileID: 627629818}
   - component: {fileID: 627629820}
   - component: {fileID: 627629819}
+  - component: {fileID: 627629821}
   m_Layer: 5
   m_Name: awan4
   m_TagString: Untagged
@@ -5435,7 +5864,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -568.78, y: -70}
-  m_SizeDelta: {x: 942.78, y: 271.5}
+  m_SizeDelta: {x: 1760, y: 840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627629819
 MonoBehaviour:
@@ -5457,7 +5886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 858395467816698800, guid: c038f67c35aeaf74c8f31b39e185bedb, type: 3}
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5475,6 +5904,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627629817}
   m_CullTransparentMesh: 1
+--- !u!225 &627629821
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627629817}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &683452380
 GameObject:
   m_ObjectHideFlags: 0
@@ -5704,10 +6145,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &683452383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5818,10 +6263,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &698643432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6081,6 +6530,94 @@ PolygonCollider2D:
       - {x: 39.72685, y: -16.325}
       - {x: 39.807266, y: -16.244581}
   m_UseDelaunayMesh: 0
+--- !u!1 &713329923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713329924}
+  - component: {fileID: 713329927}
+  - component: {fileID: 713329926}
+  - component: {fileID: 713329925}
+  m_Layer: 5
+  m_Name: awan6 (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &713329924
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713329923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -653, y: 93}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &713329925
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713329923}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &713329926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713329923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &713329927
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713329923}
+  m_CullTransparentMesh: 1
 --- !u!1 &720753658
 GameObject:
   m_ObjectHideFlags: 0
@@ -6310,10 +6847,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &720753661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6424,10 +6965,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &723252982
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6642,6 +7187,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &769212229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 769212230}
+  - component: {fileID: 769212233}
+  - component: {fileID: 769212232}
+  - component: {fileID: 769212231}
+  m_Layer: 5
+  m_Name: awan6 (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &769212230
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769212229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 590, y: 382}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &769212231
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769212229}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &769212232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769212229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &769212233
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769212229}
+  m_CullTransparentMesh: 1
 --- !u!1 &783109572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6682,10 +7315,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &783109574
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7257,10 +7894,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &878110747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7560,10 +8201,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &895154087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7674,10 +8319,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &908523229
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7932,10 +8581,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &923570770
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8150,6 +8803,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &943884931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 943884932}
+  - component: {fileID: 943884935}
+  - component: {fileID: 943884934}
+  - component: {fileID: 943884933}
+  m_Layer: 5
+  m_Name: awan6 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &943884932
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943884931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -880, y: -487}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &943884933
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943884931}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &943884934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943884931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &943884935
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943884931}
+  m_CullTransparentMesh: 1
 --- !u!1 &977354661
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,10 +9120,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &977354664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8682,10 +9427,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1013065283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8985,10 +9734,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1060606475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9099,10 +9852,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1103190300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9591,10 +10348,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1112531488
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9705,10 +10466,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1147655785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10083,10 +10848,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1190187802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10386,10 +11155,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &1235591596
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10858,10 +11631,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!1 &1304463738
 GameObject:
   m_ObjectHideFlags: 0
@@ -10902,10 +11679,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1304463740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11165,6 +11946,94 @@ PolygonCollider2D:
       - {x: 39.72685, y: -16.325}
       - {x: 39.807266, y: -16.244581}
   m_UseDelaunayMesh: 0
+--- !u!1 &1312442813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312442814}
+  - component: {fileID: 1312442817}
+  - component: {fileID: 1312442816}
+  - component: {fileID: 1312442815}
+  m_Layer: 5
+  m_Name: awan6 (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1312442814
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312442813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 49, y: 447}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1312442815
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312442813}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1312442816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312442813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1312442817
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312442813}
+  m_CullTransparentMesh: 1
 --- !u!1 &1315233553
 GameObject:
   m_ObjectHideFlags: 0
@@ -11205,10 +12074,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1315233555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11468,81 +12341,6 @@ PolygonCollider2D:
       - {x: 39.72685, y: -16.325}
       - {x: 39.807266, y: -16.244581}
   m_UseDelaunayMesh: 0
---- !u!1 &1352876065
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1352876068}
-  - component: {fileID: 1352876067}
-  - component: {fileID: 1352876066}
-  m_Layer: 5
-  m_Name: logo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1352876066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352876065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 4291277237582592131, guid: 44f05af0b146fe249b8bde85bd75cfab, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1352876067
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352876065}
-  m_CullTransparentMesh: 1
---- !u!224 &1352876068
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352876065}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 273213599}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1155, y: 650}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1381862395
 GameObject:
   m_ObjectHideFlags: 0
@@ -11583,10 +12381,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1381862397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11846,6 +12648,94 @@ PolygonCollider2D:
       - {x: 39.72685, y: -16.325}
       - {x: 39.807266, y: -16.244581}
   m_UseDelaunayMesh: 0
+--- !u!1 &1395427080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1395427084}
+  - component: {fileID: 1395427083}
+  - component: {fileID: 1395427082}
+  - component: {fileID: 1395427081}
+  m_Layer: 5
+  m_Name: logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!225 &1395427081
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395427080}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1395427082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395427080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9ea39bd86dcc09740b132ec0101c0a4f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1395427083
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395427080}
+  m_CullTransparentMesh: 1
+--- !u!224 &1395427084
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395427080}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1421.54, y: 1421.54}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1399944450
 GameObject:
   m_ObjectHideFlags: 0
@@ -11886,10 +12776,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &1399944452
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12333,10 +13227,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1401816469
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12407,6 +13305,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1426391106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426391107}
+  - component: {fileID: 1426391110}
+  - component: {fileID: 1426391109}
+  - component: {fileID: 1426391108}
+  m_Layer: 5
+  m_Name: awan6 (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1426391107
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426391106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -325, y: -420}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1426391108
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426391106}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1426391109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426391106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1426391110
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426391106}
+  m_CullTransparentMesh: 1
 --- !u!1 &1442096854
 GameObject:
   m_ObjectHideFlags: 0
@@ -12510,6 +13496,94 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1476300545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476300546}
+  - component: {fileID: 1476300549}
+  - component: {fileID: 1476300548}
+  - component: {fileID: 1476300547}
+  m_Layer: 5
+  m_Name: awan6 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1476300546
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476300545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -325, y: 475}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1476300547
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476300545}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1476300548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476300545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1476300549
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476300545}
+  m_CullTransparentMesh: 1
 --- !u!1 &1479240906
 GameObject:
   m_ObjectHideFlags: 0
@@ -12764,10 +13838,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!1 &1506267864
 GameObject:
   m_ObjectHideFlags: 0
@@ -13022,10 +14100,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!1 &1517780065
 GameObject:
   m_ObjectHideFlags: 0
@@ -13136,10 +14218,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &1517780069
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13558,10 +14644,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1533053231
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13710,6 +14800,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1552267737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1552267738}
+  - component: {fileID: 1552267741}
+  - component: {fileID: 1552267740}
+  - component: {fileID: 1552267739}
+  m_Layer: 5
+  m_Name: awan6 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1552267738
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552267737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -880, y: 353}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1552267739
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552267737}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1552267740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552267737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1552267741
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552267737}
+  m_CullTransparentMesh: 1
 --- !u!1 &1586892967
 GameObject:
   m_ObjectHideFlags: 0
@@ -13939,10 +15117,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1586892970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14053,10 +15235,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &1611738583
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14271,6 +15457,182 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1646714825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1646714826}
+  - component: {fileID: 1646714829}
+  - component: {fileID: 1646714828}
+  - component: {fileID: 1646714827}
+  m_Layer: 5
+  m_Name: awan6 (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1646714826
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646714825}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 561, y: -393}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1646714827
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646714825}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1646714828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646714825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1646714829
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646714825}
+  m_CullTransparentMesh: 1
+--- !u!1 &1650661324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650661325}
+  - component: {fileID: 1650661328}
+  - component: {fileID: 1650661327}
+  - component: {fileID: 1650661326}
+  m_Layer: 5
+  m_Name: awan6 (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1650661325
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650661324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -736, y: -420}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1650661326
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650661324}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1650661327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650661324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1650661328
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650661324}
+  m_CullTransparentMesh: 1
 --- !u!1 &1662353998
 GameObject:
   m_ObjectHideFlags: 0
@@ -14311,10 +15673,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &1662354000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14529,6 +15895,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1721771533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721771534}
+  - component: {fileID: 1721771537}
+  - component: {fileID: 1721771536}
+  - component: {fileID: 1721771535}
+  m_Layer: 5
+  m_Name: awan7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1721771534
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721771533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 690, y: 328}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1721771535
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721771533}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &1721771536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721771533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1721771537
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721771533}
+  m_CullTransparentMesh: 1
 --- !u!1 &1771620127
 GameObject:
   m_ObjectHideFlags: 0
@@ -14758,10 +16212,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1771620130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14872,10 +16330,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &1774403375
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15101,6 +16563,7 @@ GameObject:
   - component: {fileID: 1870667838}
   - component: {fileID: 1870667840}
   - component: {fileID: 1870667839}
+  - component: {fileID: 1870667841}
   m_Layer: 5
   m_Name: awan3
   m_TagString: Untagged
@@ -15125,7 +16588,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 188, y: 201.5}
-  m_SizeDelta: {x: 942.78, y: 271.5}
+  m_SizeDelta: {x: 1760, y: 840}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870667839
 MonoBehaviour:
@@ -15147,7 +16610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 858395467816698800, guid: c038f67c35aeaf74c8f31b39e185bedb, type: 3}
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15165,6 +16628,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870667837}
   m_CullTransparentMesh: 1
+--- !u!225 &1870667841
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870667837}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1873039324
 GameObject:
   m_ObjectHideFlags: 0
@@ -15205,10 +16680,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!60 &1873039326
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15677,10 +17156,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!1 &1883421060
 GameObject:
   m_ObjectHideFlags: 0
@@ -15956,10 +17439,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &1908594664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17058,10 +18545,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &2102642434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17361,10 +18852,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &2112174294
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17624,6 +19119,94 @@ PolygonCollider2D:
       - {x: 39.72685, y: -16.325}
       - {x: 39.807266, y: -16.244581}
   m_UseDelaunayMesh: 0
+--- !u!1 &2114510236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2114510237}
+  - component: {fileID: 2114510240}
+  - component: {fileID: 2114510239}
+  - component: {fileID: 2114510238}
+  m_Layer: 5
+  m_Name: awan6 (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2114510237
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114510236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 273213599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 665, y: -512}
+  m_SizeDelta: {x: 1760, y: 840}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &2114510238
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114510236}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &2114510239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114510236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3164671270955646770, guid: 87c76f2a056c3b14a801b19024b41c6a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2114510240
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114510236}
+  m_CullTransparentMesh: 1
 --- !u!1 &2140904617
 GameObject:
   m_ObjectHideFlags: 0
@@ -17664,10 +19247,14 @@ MonoBehaviour:
   panelKonfirmasi: {fileID: 0}
   butoAnimator: {fileID: 0}
   awanImages: []
+  awanCanvasGroups: []
   logoImage: {fileID: 0}
+  logoCanvasGroup: {fileID: 0}
+  delaySebelumAwan: 2
   delayAntarAwan: 0.5
   delayLogo: 1
   delaySebelumLoad: 2
+  durasiFade: 1
 --- !u!212 &2140904619
 SpriteRenderer:
   m_ObjectHideFlags: 0
