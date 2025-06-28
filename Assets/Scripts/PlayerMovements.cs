@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -21,7 +22,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private string sceneKalah = "kalah";
 
     [Header("Audio Settings")]
-    public AudioSource jumpAudioSource;   // <--- ini tambahan
+    public AudioSource jumpAudioSource;
+    public AudioSource crashAudioSource;
+
+    [Header("GroundScroller")]
+    public GroundScroller groundScroller; // drag GroundScroller disini
 
     private Rigidbody2D body;
     private Animator anim;
@@ -29,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     private float runTimer = 0f;
     private bool wasRunning = false;
     private bool isGrounded = false;
+    private bool isDead = false;
 
     void Awake()
     {
@@ -40,23 +46,30 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (isDead) return;
+
+        // Ground check
         Vector2 origin = (Vector2)transform.position + Vector2.down * groundCheckYOffset;
         isGrounded = false;
         Collider2D[] hits = Physics2D.OverlapCircleAll(origin, groundCheckRadius);
         foreach (var col in hits)
+        {
             if (col != null && col.CompareTag("Ground"))
             {
                 isGrounded = true;
                 break;
             }
+        }
         anim.SetBool("Grounded", isGrounded);
 
+        // Throw
         if (Input.GetKeyDown(throwKey) && isGrounded)
         {
             anim.SetTrigger("Throw");
             return;
         }
 
+        // Move
         float h = Input.GetAxis("Horizontal");
         bool isRunning = Mathf.Abs(h) > 0.1f;
         body.linearVelocity = new Vector2(h * speed, body.linearVelocity.y);
@@ -64,17 +77,19 @@ public class PlayerMovement : MonoBehaviour
         if (h > 0.01f) transform.localScale = Vector3.one;
         else if (h < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
 
+        // Jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
             anim.SetTrigger("Jump");
 
             if (jumpAudioSource != null)
-                jumpAudioSource.Play();   // <--- mainkan sfx jump
+                jumpAudioSource.Play();
 
             return;
         }
 
+        // Run & Idle after run
         if (isGrounded)
         {
             if (isRunning)
@@ -99,11 +114,37 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (isDead) return;
+
         if (collision.gameObject.CompareTag("Buto") || collision.gameObject.CompareTag("rintangan"))
         {
-            Debug.Log("Bertabrakan dengan " + collision.gameObject.tag + ", pindah ke scene: " + sceneKalah);
-            SceneManager.LoadScene(sceneKalah);
+            isDead = true;
+            Debug.Log("Bertabrakan dengan " + collision.gameObject.tag);
+
+            // Beri tahu groundScroller untuk berhenti
+            if (groundScroller != null)
+            {
+                groundScroller.BerhentiKarenaTabrakan();
+            }
+
+            // Mainkan crash SFX lalu load scene
+            StartCoroutine(PlayCrashThenLoadScene());
         }
+    }
+
+    IEnumerator PlayCrashThenLoadScene()
+    {
+        if (crashAudioSource != null)
+        {
+            crashAudioSource.Play();
+            yield return new WaitForSeconds(crashAudioSource.clip.length);
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        SceneManager.LoadScene(sceneKalah);
     }
 
     void OnDrawGizmosSelected()

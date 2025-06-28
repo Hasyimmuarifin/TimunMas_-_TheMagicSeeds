@@ -32,9 +32,9 @@ public class GroundScroller : MonoBehaviour
     public float durasiFade = 1f;
 
     [Header("Audio Settings")]
-    public AudioSource backsoundLogoSource;   // <-- backsound saat logo muncul
-    public AudioSource backsoundGameSource;   // <-- backsound game dari awal scene
-    public AudioSource butoAudioSource;       // <-- suara buto (misalnya langkah, growl, dll)
+    public AudioSource backsoundLogoSource;
+    public AudioSource backsoundGameSource;
+    public AudioSource butoAudioSource;
 
     private static int loopCount = 0;
     private static bool hasTriggeredPanel = false;
@@ -74,29 +74,51 @@ public class GroundScroller : MonoBehaviour
 
                 if (loopCount >= maxLoops)
                 {
-                    hasTriggeredPanel = true;
-
-                    // stop backsound game
-                    if (backsoundGameSource != null)
-                        backsoundGameSource.Stop();
-
-                    // stop suara buto
-                    if (butoAudioSource != null)
-                        butoAudioSource.Stop();
-
-                    // ubah animasi buto ke idle
-                    if (butoAnimator != null)
-                        butoAnimator.SetTrigger("ToIdle");
-
-                    // tampilkan panel konfirmasi
-                    if (panelKonfirmasi != null)
-                        panelKonfirmasi.SetActive(true);
-
-                    // mulai transisi awan & logo
-                    StartCoroutine(TransisiAwan());
+                    TriggerTransisi();
                 }
             }
         }
+    }
+
+    void TriggerTransisi()
+    {
+        hasTriggeredPanel = true;
+
+        // stop backsound game
+        if (backsoundGameSource != null)
+            backsoundGameSource.Stop();
+
+        // stop suara buto
+        if (butoAudioSource != null)
+            butoAudioSource.Stop();
+
+        // ubah animasi buto ke idle
+        if (butoAnimator != null)
+            butoAnimator.SetTrigger("ToIdle");
+
+        // tampilkan panel konfirmasi
+        if (panelKonfirmasi != null)
+            panelKonfirmasi.SetActive(true);
+
+        // mulai transisi awan & logo
+        StartCoroutine(TransisiAwan());
+    }
+
+    public void BerhentiKarenaTabrakan()
+    {
+        hasTriggeredPanel = true;
+        speed = 0;
+
+        // hentikan suara
+        if (backsoundGameSource != null)
+            backsoundGameSource.Stop();
+
+        if (butoAudioSource != null)
+            butoAudioSource.Stop();
+
+        // animasi buto ke idle
+        if (butoAnimator != null)
+            butoAnimator.SetTrigger("ToIdle");
     }
 
     IEnumerator TransisiAwan()
@@ -119,7 +141,6 @@ public class GroundScroller : MonoBehaviour
         {
             logoImage.SetActive(true);
 
-            // mainkan backsound logo
             if (backsoundLogoSource != null)
             {
                 backsoundLogoSource.Play();
