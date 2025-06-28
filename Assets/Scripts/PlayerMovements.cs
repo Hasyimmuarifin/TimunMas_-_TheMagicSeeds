@@ -18,7 +18,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private KeyCode throwKey = KeyCode.F;
 
     [Header("Scene Settings")]
-    [SerializeField] private string sceneKalah = "kalah"; // <-- Bisa diubah dari Inspector
+    [SerializeField] private string sceneKalah = "kalah";
+
+    [Header("Audio Settings")]
+    public AudioSource jumpAudioSource;   // <--- ini tambahan
 
     private Rigidbody2D body;
     private Animator anim;
@@ -65,6 +68,10 @@ public class PlayerMovement : MonoBehaviour
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
             anim.SetTrigger("Jump");
+
+            if (jumpAudioSource != null)
+                jumpAudioSource.Play();   // <--- mainkan sfx jump
+
             return;
         }
 

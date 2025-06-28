@@ -20,9 +20,9 @@ public class GroundScroller : MonoBehaviour
     [Header("Transisi Animasi")]
     public Animator butoAnimator;
     public GameObject[] awanImages;
-    public CanvasGroup[] awanCanvasGroups;  // CanvasGroup untuk awan fade-in
+    public CanvasGroup[] awanCanvasGroups;
     public GameObject logoImage;
-    public CanvasGroup logoCanvasGroup;     // CanvasGroup untuk logo fade-in
+    public CanvasGroup logoCanvasGroup;
 
     [Header("Delay Transisi")]
     public float delaySebelumAwan = 2f;
@@ -31,8 +31,22 @@ public class GroundScroller : MonoBehaviour
     public float delaySebelumLoad = 2f;
     public float durasiFade = 1f;
 
+    [Header("Audio Settings")]
+    public AudioSource backsoundSource;
+    public AudioSource butoAudioSource;  // <--- suara buto
+
     private static int loopCount = 0;
     private static bool hasTriggeredPanel = false;
+
+    void Start()
+    {
+        // mulai suara buto dari awal, looping
+        if (butoAudioSource != null)
+        {
+            butoAudioSource.loop = true;
+            butoAudioSource.Play();
+        }
+    }
 
     void Update()
     {
@@ -53,6 +67,12 @@ public class GroundScroller : MonoBehaviour
                 if (loopCount >= maxLoops)
                 {
                     hasTriggeredPanel = true;
+
+                    // hentikan suara buto
+                    if (butoAudioSource != null)
+                    {
+                        butoAudioSource.Stop();
+                    }
 
                     // 1. Ubah animasi buto ke Idle
                     if (butoAnimator != null)
@@ -75,10 +95,8 @@ public class GroundScroller : MonoBehaviour
 
     IEnumerator TransisiAwan()
     {
-        // 1. Delay sebelum awan pertama muncul
         yield return new WaitForSeconds(delaySebelumAwan);
 
-        // 2. Munculkan awan satu per satu dengan fade-in
         for (int i = 0; i < awanImages.Length; i++)
         {
             if (awanImages[i] != null && awanCanvasGroups[i] != null)
@@ -89,17 +107,20 @@ public class GroundScroller : MonoBehaviour
             }
         }
 
-        // 3. Delay sebelum logo muncul
         yield return new WaitForSeconds(delayLogo);
 
-        // 4. Fade-in logo
         if (logoImage != null && logoCanvasGroup != null)
         {
             logoImage.SetActive(true);
+
+            if (backsoundSource != null)
+            {
+                backsoundSource.Play();
+            }
+
             yield return StartCoroutine(FadeCanvasGroup(logoCanvasGroup, 0f, 1f, durasiFade));
         }
 
-        // 5. Delay sebelum pindah scene
         yield return new WaitForSeconds(delaySebelumLoad);
         SceneManager.LoadScene(sceneToLoad);
     }
