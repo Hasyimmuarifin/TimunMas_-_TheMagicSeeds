@@ -32,15 +32,23 @@ public class GroundScroller : MonoBehaviour
     public float durasiFade = 1f;
 
     [Header("Audio Settings")]
-    public AudioSource backsoundSource;
-    public AudioSource butoAudioSource;  // <--- suara buto
+    public AudioSource backsoundLogoSource;   // <-- backsound saat logo muncul
+    public AudioSource backsoundGameSource;   // <-- backsound game dari awal scene
+    public AudioSource butoAudioSource;       // <-- suara buto (misalnya langkah, growl, dll)
 
     private static int loopCount = 0;
     private static bool hasTriggeredPanel = false;
 
     void Start()
     {
-        // mulai suara buto dari awal, looping
+        // mulai backsound game dari awal
+        if (backsoundGameSource != null)
+        {
+            backsoundGameSource.loop = true;
+            backsoundGameSource.Play();
+        }
+
+        // mulai suara buto dari awal
         if (butoAudioSource != null)
         {
             butoAudioSource.loop = true;
@@ -68,25 +76,23 @@ public class GroundScroller : MonoBehaviour
                 {
                     hasTriggeredPanel = true;
 
-                    // hentikan suara buto
+                    // stop backsound game
+                    if (backsoundGameSource != null)
+                        backsoundGameSource.Stop();
+
+                    // stop suara buto
                     if (butoAudioSource != null)
-                    {
                         butoAudioSource.Stop();
-                    }
 
-                    // 1. Ubah animasi buto ke Idle
+                    // ubah animasi buto ke idle
                     if (butoAnimator != null)
-                    {
                         butoAnimator.SetTrigger("ToIdle");
-                    }
 
-                    // 2. Tampilkan panel konfirmasi
+                    // tampilkan panel konfirmasi
                     if (panelKonfirmasi != null)
-                    {
                         panelKonfirmasi.SetActive(true);
-                    }
 
-                    // 3. Mulai transisi awan & logo
+                    // mulai transisi awan & logo
                     StartCoroutine(TransisiAwan());
                 }
             }
@@ -113,9 +119,10 @@ public class GroundScroller : MonoBehaviour
         {
             logoImage.SetActive(true);
 
-            if (backsoundSource != null)
+            // mainkan backsound logo
+            if (backsoundLogoSource != null)
             {
-                backsoundSource.Play();
+                backsoundLogoSource.Play();
             }
 
             yield return StartCoroutine(FadeCanvasGroup(logoCanvasGroup, 0f, 1f, durasiFade));
