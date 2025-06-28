@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: be9cbf978875f1644bcba9da34e75968
+guid: 26cfa54bc83be01469960bcde7a3826b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2914503216214332612
-    second: loading_0
+      213: -4598232596028134952
+    second: judul game_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,11 +109,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: loading_0
+      name: judul game_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3bafcc34ca9d87d0800000000000000
-      internalID: -2914503216214332612
+      spriteID: 8d9ee1ff0dbcf20c0800000000000000
+      internalID: -4598232596028134952
       vertices: []
       indices: 
       edges: []
@@ -147,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      loading_0: -2914503216214332612
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
