@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      awanblok_0: 4060252883898240608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
