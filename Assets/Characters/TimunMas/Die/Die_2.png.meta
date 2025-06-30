@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9dab58df5d569e34c93464866b6a0f86
+guid: b26e8ec9b325cd6409a6af559a90439d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2091763668491180885
-    second: Die2_0
+      213: 4141371466311245606
+    second: Die_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1500
+  spritePixelsToUnits: 900
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Die2_0
+      name: Die_2_0
       rect:
         serializedVersion: 2
-        x: 852
-        y: 831
-        width: 1672
-        height: 2556
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 748
+        y: 481
+        width: 1872
+        height: 2040
+      alignment: 9
+      pivot: {x: 0.9, y: 0.65}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55b1c7e49ff670d10800000000000000
-      internalID: 2091763668491180885
+      spriteID: 62f9b6c186b197930800000000000000
+      internalID: 4141371466311245606
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7dfdd34e5d092d64b802b8445ad65fd2
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Die2_0: 2091763668491180885
+      Die_2_0: 4141371466311245606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
