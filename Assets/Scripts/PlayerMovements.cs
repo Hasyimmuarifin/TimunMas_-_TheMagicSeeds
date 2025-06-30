@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource crashAudioSource;
 
     [Header("GroundScroller")]
-    public GroundScroller groundScroller; // drag GroundScroller disini
+    public GroundScroller groundScroller;
 
     private Rigidbody2D body;
     private Animator anim;
@@ -35,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
     private bool wasRunning = false;
     private bool isGrounded = false;
     private bool isDead = false;
+    private bool isGameOver = false;
+
+    // === tambahan baru
+    private bool awaitLanding = false;
+    private bool disableAfterLanding = false;
 
     void Awake()
     {
@@ -62,6 +67,17 @@ public class PlayerMovement : MonoBehaviour
         }
         anim.SetBool("Grounded", isGrounded);
 
+        // jika sedang menunggu landing
+        if (awaitLanding && isGrounded)
+        {
+            // stop total
+            disableAfterLanding = true;
+            awaitLanding = false;
+            MatikanInput();
+        }
+
+        if (isGameOver) return;
+
         // Throw
         if (Input.GetKeyDown(throwKey) && isGrounded)
         {
@@ -72,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
         // Move
         float h = Input.GetAxis("Horizontal");
         bool isRunning = Mathf.Abs(h) > 0.1f;
-        body.linearVelocity = new Vector2(h * speed, body.linearVelocity.y); // Diubah dari linearlinearVelocity
+        body.linearVelocity = new Vector2(h * speed, body.linearVelocity.y);
 
         if (h > 0.01f) transform.localScale = Vector3.one;
         else if (h < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
@@ -80,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
         // Jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce); // Diubah dari linearlinearVelocity
+            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
             anim.SetTrigger("Jump");
 
             if (jumpAudioSource != null)
@@ -120,25 +136,14 @@ public class PlayerMovement : MonoBehaviour
         {
             isDead = true;
             Debug.Log("Bertabrakan dengan " + collision.gameObject.tag);
-            
-            // --- PERUBAHAN DIMULAI DI SINI ---
 
-            // 1. Hentikan semua gerakan player
             body.linearVelocity = Vector2.zero;
-            body.isKinematic = true; // Membuat player tidak terpengaruh fisika lagi
-
-            // 2. Memicu animasi Die
+            body.isKinematic = true;
             anim.SetTrigger("Die");
 
-            // --- PERUBAHAN SELESAI ---
-
-            // Beri tahu groundScroller untuk berhenti
             if (groundScroller != null)
-            {
                 groundScroller.BerhentiKarenaTabrakan();
-            }
 
-            // Mainkan crash SFX lalu load scene
             StartCoroutine(PlayCrashThenLoadScene());
         }
     }
@@ -148,16 +153,36 @@ public class PlayerMovement : MonoBehaviour
         if (crashAudioSource != null)
         {
             crashAudioSource.Play();
-            // Tunggu selama durasi klip audio. Ini memberi waktu bagi animasi Die untuk berjalan.
             yield return new WaitForSeconds(crashAudioSource.clip.length);
         }
         else
         {
-            // Jika tidak ada audio, beri jeda standar agar animasi sempat terlihat.
-            yield return new WaitForSeconds(1f); // Anda bisa sesuaikan durasi ini
+            yield return new WaitForSeconds(1f);
         }
 
         SceneManager.LoadScene(sceneKalah);
+    }
+
+    public void MatikanInput()
+    {
+        isGameOver = true;
+        body.linearVelocity = Vector2.zero;
+        body.isKinematic = true;
+        anim.SetBool("Run", false);
+        anim.SetBool("IdleAfterRun", false);
+    }
+
+    // metode baru
+    public void AwaitLandingThenStop()
+    {
+        if (isGrounded)
+        {
+            MatikanInput();
+        }
+        else
+        {
+            awaitLanding = true;
+        }
     }
 
     void OnDrawGizmosSelected()

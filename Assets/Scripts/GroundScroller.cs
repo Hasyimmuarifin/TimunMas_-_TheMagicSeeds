@@ -41,14 +41,12 @@ public class GroundScroller : MonoBehaviour
 
     void Start()
     {
-        // mulai backsound game dari awal
         if (backsoundGameSource != null)
         {
             backsoundGameSource.loop = true;
             backsoundGameSource.Play();
         }
 
-        // mulai suara buto dari awal
         if (butoAudioSource != null)
         {
             butoAudioSource.loop = true;
@@ -60,7 +58,6 @@ public class GroundScroller : MonoBehaviour
     {
         if (hasTriggeredPanel) return;
 
-        // Geser objek ke kiri
         transform.position += Vector3.left * speed * Time.deltaTime;
 
         if (transform.position.x <= stopAtX)
@@ -84,23 +81,23 @@ public class GroundScroller : MonoBehaviour
     {
         hasTriggeredPanel = true;
 
-        // stop backsound game
         if (backsoundGameSource != null)
             backsoundGameSource.Stop();
 
-        // stop suara buto
         if (butoAudioSource != null)
             butoAudioSource.Stop();
 
-        // ubah animasi buto ke idle
         if (butoAnimator != null)
             butoAnimator.SetTrigger("ToIdle");
 
-        // tampilkan panel konfirmasi
+        // matikan kontrol player
+        PlayerMovement player = FindObjectOfType<PlayerMovement>();
+        if (player != null)
+            player.AwaitLandingThenStop();
+
         if (panelKonfirmasi != null)
             panelKonfirmasi.SetActive(true);
 
-        // mulai transisi awan & logo
         StartCoroutine(TransisiAwan());
     }
 
@@ -109,14 +106,12 @@ public class GroundScroller : MonoBehaviour
         hasTriggeredPanel = true;
         speed = 0;
 
-        // hentikan suara
         if (backsoundGameSource != null)
             backsoundGameSource.Stop();
 
         if (butoAudioSource != null)
             butoAudioSource.Stop();
 
-        // animasi buto ke idle
         if (butoAnimator != null)
             butoAnimator.SetTrigger("ToIdle");
     }
@@ -142,9 +137,7 @@ public class GroundScroller : MonoBehaviour
             logoImage.SetActive(true);
 
             if (backsoundLogoSource != null)
-            {
                 backsoundLogoSource.Play();
-            }
 
             yield return StartCoroutine(FadeCanvasGroup(logoCanvasGroup, 0f, 1f, durasiFade));
         }
