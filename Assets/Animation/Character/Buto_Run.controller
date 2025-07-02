@@ -85,7 +85,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Buto
+  m_Name: Buto_Run
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: ToIdle
@@ -102,8 +102,8 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
-    m_StateMachine: {fileID: 229286156268505293}
+    m_Name: Run Buto
+    m_StateMachine: {fileID: -6870067468155958535}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -114,8 +114,8 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Run Buto
-    m_StateMachine: {fileID: -6870067468155958535}
+    m_Name: Base Layer
+    m_StateMachine: {fileID: 229286156268505293}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []

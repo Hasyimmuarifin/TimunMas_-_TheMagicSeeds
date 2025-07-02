@@ -6,6 +6,7 @@ public class ButoIjoHealth : MonoBehaviour
 {
     public int currentHP = 100;
     public int maxHP = 100;
+    public TransisiManager transisiManager;
 
     public int layerIndex; // 7-14 untuk 4 scene kejar - 4 scene lempar
     public string nextSceneName;
@@ -31,7 +32,14 @@ public class ButoIjoHealth : MonoBehaviour
         }
         if (currentHP <= 0)
         {
-            LoadNextScene();
+            if (transisiManager != null)
+            {
+                transisiManager.TransisiKeluar("loading");
+            }
+            else
+            {
+                SceneManager.LoadScene("loading");
+            }
         }
     }
 
