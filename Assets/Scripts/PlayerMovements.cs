@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Scene Settings")]
     [SerializeField] private string sceneKalah = "kalah";
+    [SerializeField] private string sceneMenang = "play";
 
     [Header("Audio Settings")]
     public AudioSource jumpAudioSource;

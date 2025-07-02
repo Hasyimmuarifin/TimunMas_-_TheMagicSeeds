@@ -4229,6 +4229,7 @@ MonoBehaviour:
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
   sceneKalah: lose
+  sceneMenang: Lempar1
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}
   groundScroller: {fileID: 530483749}
@@ -4270,7 +4271,7 @@ MonoBehaviour:
   speed: 4
   resetX: 60
   stopAtX: -50
-  sceneToLoad: play
+  sceneToLoad: Lempar1
   maxLoops: 1
   isCounter: 0
   panelKonfirmasi: {fileID: 0}
@@ -5070,7 +5071,7 @@ MonoBehaviour:
   speed: 4
   resetX: 50
   stopAtX: -50
-  sceneToLoad: play
+  sceneToLoad: Lempar1
   maxLoops: 3
   isCounter: 1
   panelKonfirmasi: {fileID: 273213596}

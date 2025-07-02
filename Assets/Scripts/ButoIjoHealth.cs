@@ -12,6 +12,7 @@ public class ButoIjoHealth : MonoBehaviour
     public string nextSceneName;
     [Header("UI")]
     public Slider healthSlider;
+    public ButoIjoThrower playerMovement;
 
     void Start()
     {
@@ -32,13 +33,14 @@ public class ButoIjoHealth : MonoBehaviour
         }
         if (currentHP <= 0)
         {
-            if (transisiManager != null)
+            currentHP = 0;
+            if (playerMovement != null)
             {
-                transisiManager.TransisiKeluar("loading");
+                playerMovement.TriggerDeathButo(); // Panggil method khusus untuk efek kematian
             }
             else
             {
-                SceneManager.LoadScene("loading");
+                Debug.LogWarning("PlayerMovement tidak ditemukan untuk TriggerDeath.");
             }
         }
     }

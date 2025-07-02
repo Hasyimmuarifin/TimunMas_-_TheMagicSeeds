@@ -1431,7 +1431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &273213597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,7 +1913,7 @@ Transform:
   m_GameObject: {fileID: 435276751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0.1, z: 0}
+  m_LocalPosition: {x: -0.09, y: -2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1939,11 +1939,10 @@ MonoBehaviour:
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
   sceneKalah: lose
+  sceneMenang: play
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}
   groundScroller: {fileID: 0}
-  butoAnimator: {fileID: 0}
-  butoRunAnimator: {fileID: 0}
   isDead: 0
 --- !u!95 &435276757
 Animator:
@@ -3985,7 +3984,7 @@ Transform:
   m_GameObject: {fileID: 813483097}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0.1, z: -10}
+  m_LocalPosition: {x: -0.09, y: -2.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7224,7 +7223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelTransisi: {fileID: 273213596}
-  durasiTransisi: 5
+  durasiTransisi: 1
   awanImages:
   - {fileID: 73452232}
   - {fileID: 562549466}
@@ -7269,10 +7268,14 @@ MonoBehaviour:
   - {fileID: 20372708}
   logoImage: {fileID: 1395427080}
   logoCanvasGroup: {fileID: 1395427081}
-  delaySebelumAwan: 1.5
-  delayAntarAwan: 0.03
+  sceneToLoad: kalah
+  backsoundLogoSource: {fileID: 853167150}
+  backsoundGameSource: {fileID: 0}
+  butoAudioSource: {fileID: 0}
+  delaySebelumAwan: 1
+  delayAntarAwan: 0.05
   delayLogo: 0.8
-  durasiFade: 2
+  durasiFade: 0.05
   delaySebelumLoad: 0.05
 --- !u!1 &1455348968
 GameObject:
@@ -9988,7 +9991,7 @@ Transform:
   m_GameObject: {fileID: 1947743847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09000003, y: 0.100000024, z: -10}
+  m_LocalPosition: {x: -0.0900085, y: -0.09819406, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10770,10 +10773,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHP: 100
   maxHP: 100
-  transisiManager: {fileID: 0}
+  transisiManager: {fileID: 1442096859}
   layerIndex: 7
   nextSceneName: loading
   healthSlider: {fileID: 1089249980}
+  playerMovement: {fileID: 2059554833}
 --- !u!114 &2059554833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10792,6 +10796,10 @@ MonoBehaviour:
   throwPoint: {fileID: 65594794}
   minThrowInterval: 0.2
   maxThrowInterval: 2
+  isDead: 0
+  jumpAudioSource: {fileID: 0}
+  crashAudioSource: {fileID: 66089393}
+  sceneMenang: loading
 --- !u!1 &2112174292
 GameObject:
   m_ObjectHideFlags: 0
