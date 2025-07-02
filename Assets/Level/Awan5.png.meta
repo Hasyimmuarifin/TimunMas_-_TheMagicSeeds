@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 121cfd2476bead9468e7b7c66cacf9a3
+guid: 770ddcbbbc0865849993200596ba6556
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -866518764892109489
-    second: Gerakan Bumi mengelilingi Matahari disebut (3)_0
+      213: -4469499217570138348
+    second: Awan5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gerakan Bumi mengelilingi Matahari disebut (3)_0
+      name: Awan5_0
       rect:
         serializedVersion: 2
-        x: 364
-        y: 45
-        width: 2240
-        height: 559
+        x: 60
+        y: 453
+        width: 3080
+        height: 895
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f45456b36c189f3f0800000000000000
-      internalID: -866518764892109489
+      spriteID: 41778dc542629f1c0800000000000000
+      internalID: -4469499217570138348
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a4f7992cd7fccb74395175b28969c176
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gerakan Bumi mengelilingi Matahari disebut (3)_0: -866518764892109489
+      Awan5_0: -4469499217570138348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
