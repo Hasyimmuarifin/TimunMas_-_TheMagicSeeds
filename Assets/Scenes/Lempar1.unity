@@ -10794,8 +10794,8 @@ MonoBehaviour:
   - {fileID: 5407517718564953438, guid: e37514283576dd74aa1ac4a6c2bd13f3, type: 3}
   - {fileID: 4108067079352778397, guid: c156ce2fae18b0e438799729873452de, type: 3}
   throwPoint: {fileID: 65594794}
-  minThrowInterval: 0.2
-  maxThrowInterval: 2
+  minThrowInterval: 0.4
+  maxThrowInterval: 1.5
   isDead: 0
   jumpAudioSource: {fileID: 0}
   crashAudioSource: {fileID: 66089393}
