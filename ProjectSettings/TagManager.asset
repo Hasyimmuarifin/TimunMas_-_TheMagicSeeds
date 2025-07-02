@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Buto
   - rintangan
+  - Projectile
+  - ButoHead
+  - ProjectileTimun
   layers:
   - Default
   - TransparentFX
@@ -15,16 +18,16 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Level1
+  - LemparLv1
+  - Level2
+  - LemparLv2
+  - Level3
+  - LemparLv3
+  - Level4
+  - LemparLv4
+  - Projectile
+  - ProjectileTimun
   - 
   - 
   - 

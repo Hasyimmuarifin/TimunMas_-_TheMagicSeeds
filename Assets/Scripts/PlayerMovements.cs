@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 12f;
+    [SerializeField] private PlayerHealth playerHealth;
+
 
     [Header("Run Timing")]
     [SerializeField] private float longRunThreshold = 0.5f;
@@ -15,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float groundCheckYOffset = 0.1f;
     [SerializeField] private float groundCheckRadius = 0.1f;
 
-    [Header("Throw")]
-    [SerializeField] private KeyCode throwKey = KeyCode.F;
+    // [Header("Throw")]
+    // [SerializeField] private KeyCode throwKey = KeyCode.F;
 
     [Header("Scene Settings")]
     [SerializeField] private string sceneKalah = "kalah";
@@ -34,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     private float runTimer = 0f;
     private bool wasRunning = false;
     private bool isGrounded = false;
-    private bool isDead = false;
+    public bool isDead = false;
     private bool isGameOver = false;
 
     // === tambahan baru
@@ -78,12 +80,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGameOver) return;
 
-        // Throw
-        if (Input.GetKeyDown(throwKey) && isGrounded)
-        {
-            anim.SetTrigger("Throw");
-            return;
-        }
+        // // Throw
+        // if (Input.GetKeyDown(throwKey) && isGrounded)
+        // {
+        //     anim.SetTrigger("Throw");
+        //     return;
+        // }
 
         // Move
         float h = Input.GetAxis("Horizontal");
@@ -141,11 +143,38 @@ public class PlayerMovement : MonoBehaviour
             body.isKinematic = true;
             anim.SetTrigger("Die");
 
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(8);
+            }
+            else
+            {
+                Debug.LogWarning("PlayerHealth reference belum di-assign di Inspector.");
+            }
+
             if (groundScroller != null)
                 groundScroller.BerhentiKarenaTabrakan();
 
             StartCoroutine(PlayCrashThenLoadScene());
         }
+    }
+
+    public void TriggerDeath()
+    {
+        if (isDead) return;
+
+        isDead = true;
+        Debug.Log("Player mati karena HP habis.");
+
+        body.linearVelocity = Vector2.zero;
+        body.isKinematic = true;
+
+        anim.SetTrigger("Die");
+
+        if (groundScroller != null)
+            groundScroller.BerhentiKarenaTabrakan();
+
+        StartCoroutine(PlayCrashThenLoadScene());
     }
 
     IEnumerator PlayCrashThenLoadScene()
