@@ -1433,7 +1433,7 @@ MonoBehaviour:
   speed: 4
   resetX: 170
   stopAtX: -150
-  sceneToLoad: play
+  sceneToLoad: Lempar2
   maxLoops: 1
   isCounter: 1
   panelKonfirmasi: {fileID: 273213596}
@@ -2467,7 +2467,7 @@ Transform:
   m_GameObject: {fileID: 435276751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0.1, z: 0}
+  m_LocalPosition: {x: -0.09, y: -3.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2485,16 +2485,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f676068cd687dc64489b8e2ca97e801f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   jumpForce: 15
+  playerHealth: {fileID: 0}
   longRunThreshold: 0.5
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
-  throwKey: 102
   sceneKalah: lose
+  sceneMenang: play
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}
   groundScroller: {fileID: 530483749}
+  isDead: 0
 --- !u!95 &435276757
 Animator:
   serializedVersion: 7
@@ -2529,7 +2531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e21805091703f459f74b869f5ab74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 3
   resetX: 60
   stopAtX: -50
   sceneToLoad: play
@@ -5551,7 +5553,7 @@ Transform:
   m_GameObject: {fileID: 813483097}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0.1, z: -10}
+  m_LocalPosition: {x: -0.09, y: -3.56, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12616,7 +12618,7 @@ Transform:
   m_GameObject: {fileID: 1947743847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09000003, y: 0.100000024, z: -10}
+  m_LocalPosition: {x: -0.0900085, y: -0.09819406, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13207,7 +13209,7 @@ Animator:
   m_GameObject: {fileID: 2059554825}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c0f6b470fd1c062479be7322a4191955, type: 2}
+  m_Controller: {fileID: 9100000, guid: ee86f25115716cf4db8160972031a30f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

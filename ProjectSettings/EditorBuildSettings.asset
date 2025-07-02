@@ -4,7 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/play_awal.unity
@@ -19,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/lose.unity
     guid: 147d3825302746d40ab81db050bcbdf7
   - enabled: 1
-    path: Assets/Scenes/title.unity
+    path: Assets/Scenes/ending.unity
     guid: 393d64b5141106a4f8ac8b204d501b64
   - enabled: 1
     path: Assets/Scenes/loading.unity
@@ -32,8 +31,4 @@ EditorBuildSettings:
     guid: 34c8a3c7307c723428554d68f4293f18
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-=======
-  m_Scenes: []
-  m_configObjects: {}
->>>>>>> prolog
   m_UseUCBPForAssetBundles: 0

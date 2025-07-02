@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: -5002083299838237890}
   - component: {fileID: 1103542111404246176}
   - component: {fileID: 5807429560042873988}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Trasi_0
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

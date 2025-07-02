@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: -273565689557307283}
   - component: {fileID: 1269802472628380080}
   - component: {fileID: 1837511001976127149}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: biji timun_0
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
