@@ -4358,14 +4358,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jumpForce: 16
+  playerHealth: {fileID: 0}
   longRunThreshold: 0.5
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
-  throwKey: 102
   sceneKalah: lose
+  sceneMenang: play
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}
   groundScroller: {fileID: 530483749}
+  isDead: 0
 --- !u!95 &435276757
 Animator:
   serializedVersion: 7
@@ -19719,7 +19721,7 @@ Animator:
   m_GameObject: {fileID: 2059554825}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c0f6b470fd1c062479be7322a4191955, type: 2}
+  m_Controller: {fileID: 9100000, guid: ee86f25115716cf4db8160972031a30f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
