@@ -174,7 +174,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       awan_0: 3164671270955646770
+=======
+      Die1_0: 2561942922019073981
+>>>>>>> prolog
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

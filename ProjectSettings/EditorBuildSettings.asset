@@ -4,6 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/play_awal.unity
@@ -31,4 +32,8 @@ EditorBuildSettings:
     guid: 34c8a3c7307c723428554d68f4293f18
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+=======
+  m_Scenes: []
+  m_configObjects: {}
+>>>>>>> prolog
   m_UseUCBPForAssetBundles: 0
