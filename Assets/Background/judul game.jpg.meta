@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 08fc327e59d62df42b0b5cd2928a3bd4
+guid: 26cfa54bc83be01469960bcde7a3826b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1255358712750753429
-    second: judul_game_0
+      213: -4598232596028134952
+    second: judul game_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: judul_game_0
+      name: judul game_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b69bcc4e6e1149ee0800000000000000
-      internalID: -1255358712750753429
+      spriteID: 8d9ee1ff0dbcf20c0800000000000000
+      internalID: -4598232596028134952
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      judul_game_0: -1255358712750753429
+      judul game_0: -4598232596028134952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
