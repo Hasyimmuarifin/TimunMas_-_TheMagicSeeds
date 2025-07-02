@@ -5154,7 +5154,7 @@ MonoBehaviour:
   speed: 3
   resetX: 10
   stopAtX: -50
-  sceneToLoad: play
+  sceneToLoad: Lempar3
   maxLoops: 3
   isCounter: 1
   panelKonfirmasi: {fileID: 273213596}

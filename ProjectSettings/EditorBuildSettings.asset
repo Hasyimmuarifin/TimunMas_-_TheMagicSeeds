@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/level4.unity
-    guid: c2bd0891baca87f48b4e1d2417e57277
+    guid: 266db76d190c4ef4299c1f601e225eb9
   - enabled: 1
     path: Assets/Scenes/play.unity
     guid: 774f4541fb7f2a14286e324641fb7f63
@@ -24,11 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/loading.unity
     guid: c5bf381ccf3576d49b757940f86fa801
   - enabled: 1
-    path: Assets/Scenes/Lempar4.unity
-    guid: c24e8823024852c4bace7288d9957812
-  - enabled: 1
     path: Assets/Scenes/Lempar1.unity
     guid: 34c8a3c7307c723428554d68f4293f18
+  - enabled: 1
+    path: Assets/Scenes/Lempar3.unity
+    guid: 99863b49f2f991544b5c05e82ec4221a
+  - enabled: 1
+    path: Assets/Scenes/Lempar4.unity
+    guid: c24e8823024852c4bace7288d9957812
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
