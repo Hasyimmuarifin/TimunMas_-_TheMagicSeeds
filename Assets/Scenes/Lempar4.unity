@@ -1938,7 +1938,7 @@ MonoBehaviour:
   longRunThreshold: 0.5
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
-  sceneKalah: lose
+  sceneKalah: loselempar4
   sceneMenang: play
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}
@@ -10775,7 +10775,7 @@ MonoBehaviour:
   maxHP: 100
   transisiManager: {fileID: 1442096859}
   layerIndex: 7
-  nextSceneName: loading
+  nextSceneName: ending
   healthSlider: {fileID: 1089249980}
   playerMovement: {fileID: 2059554833}
 --- !u!114 &2059554833

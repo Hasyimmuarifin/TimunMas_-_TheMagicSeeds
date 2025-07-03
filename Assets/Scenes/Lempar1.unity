@@ -4249,7 +4249,7 @@ MonoBehaviour:
   isDead: 0
   jumpAudioSource: {fileID: 0}
   crashAudioSource: {fileID: 66089393}
-  sceneMenang: loading
+  sceneMenang: nextToLevel2
 --- !u!82 &1513089508
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5955,7 +5955,7 @@ MonoBehaviour:
   longRunThreshold: 0.5
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
-  sceneKalah: lose
+  sceneKalah: loselempar1
   sceneMenang: play
   jumpAudioSource: {fileID: 1690001224}
   crashAudioSource: {fileID: 66089393}

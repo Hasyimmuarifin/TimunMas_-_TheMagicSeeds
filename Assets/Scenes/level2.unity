@@ -2491,7 +2491,7 @@ MonoBehaviour:
   longRunThreshold: 0.5
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
-  sceneKalah: lose
+  sceneKalah: loselevel2
   sceneMenang: play
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}

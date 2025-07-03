@@ -5549,7 +5549,7 @@ MonoBehaviour:
   maxHP: 100
   transisiManager: {fileID: 428603577}
   layerIndex: 7
-  nextSceneName: loading
+  nextSceneName: nextToLevel4
   healthSlider: {fileID: 387446457}
   playerMovement: {fileID: 881678435}
 --- !u!114 &881678435
@@ -8208,7 +8208,7 @@ MonoBehaviour:
   longRunThreshold: 0.5
   groundCheckYOffset: 0.45
   groundCheckRadius: 0.42
-  sceneKalah: lose
+  sceneKalah: loselempar3
   sceneMenang: play
   jumpAudioSource: {fileID: 1294643584}
   crashAudioSource: {fileID: 66089393}
