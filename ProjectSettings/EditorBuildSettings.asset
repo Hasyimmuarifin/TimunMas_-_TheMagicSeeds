@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/title.unity
-    guid: 393d64b5141106a4f8ac8b204d501b64
+    guid: ab724188320e33b42904afe24e3137e9
   - enabled: 1
     path: Assets/Scenes/loading.unity
     guid: c5bf381ccf3576d49b757940f86fa801
@@ -15,37 +15,22 @@ EditorBuildSettings:
     path: Assets/Scenes/play_awal.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/level4.unity
-    guid: 266db76d190c4ef4299c1f601e225eb9
+    path: Assets/Scenes/prolog1.unity
+    guid: c6910e829e2980f419f5ecba8a463294
+  - enabled: 1
+    path: Assets/Scenes/prolog2.unity
+    guid: 3951f4490291dc54ca4c137d3423c9c3
   - enabled: 1
     path: Assets/Scenes/play.unity
     guid: 774f4541fb7f2a14286e324641fb7f63
   - enabled: 1
-    path: Assets/Scenes/lose.unity
-    guid: 147d3825302746d40ab81db050bcbdf7
+    path: Assets/Scenes/level1.unity
+    guid: 9fad3d35bd5467b47855dd71728a1c52
   - enabled: 1
-    path: Assets/Scenes/ending.unity
-    guid: 393d64b5141106a4f8ac8b204d501b64
+    path: Assets/Scenes/credit/dena.unity
+    guid: 8cc4d858c15db284fae3219bb6c77ae9
   - enabled: 1
-    path: Assets/Scenes/loading.unity
-    guid: c5bf381ccf3576d49b757940f86fa801
-  - enabled: 1
-    path: Assets/Scenes/Lempar1.unity
-    guid: 34c8a3c7307c723428554d68f4293f18
-  - enabled: 1
-    path: Assets/Scenes/Lempar3.unity
-    guid: 99863b49f2f991544b5c05e82ec4221a
-  - enabled: 1
-    path: Assets/Scenes/Lempar4.unity
-    guid: c24e8823024852c4bace7288d9957812
-=======
-    path: Assets/Scenes/prolog1.unity
-    guid: c6910e829e2980f419f5ecba8a463294
-  - enabled: 1
-    path: Assets/Scenes/exit2.unity
-    guid: 38bec9bbdf4ca9b40a7a57e4b517d37f
->>>>>>> openingGame
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    path: Assets/Scenes/credit/hasyim.unity
+    guid: 2a2a53f3a9e575847840c8912edb3395
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
