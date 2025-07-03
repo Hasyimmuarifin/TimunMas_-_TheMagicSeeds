@@ -10799,7 +10799,7 @@ MonoBehaviour:
   isDead: 0
   jumpAudioSource: {fileID: 0}
   crashAudioSource: {fileID: 66089393}
-  sceneMenang: loading
+  sceneMenang: ending
 --- !u!1 &2112174292
 GameObject:
   m_ObjectHideFlags: 0

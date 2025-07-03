@@ -5572,7 +5572,7 @@ MonoBehaviour:
   isDead: 0
   jumpAudioSource: {fileID: 0}
   crashAudioSource: {fileID: 66089393}
-  sceneMenang: loading
+  sceneMenang: nextToLevel4
 --- !u!82 &881678436
 AudioSource:
   m_ObjectHideFlags: 0

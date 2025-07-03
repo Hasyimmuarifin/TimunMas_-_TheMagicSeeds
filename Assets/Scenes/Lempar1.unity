@@ -4226,7 +4226,7 @@ MonoBehaviour:
   maxHP: 100
   transisiManager: {fileID: 2088619400}
   layerIndex: 7
-  nextSceneName: loading
+  nextSceneName: nextToLevel2
   healthSlider: {fileID: 2005991243}
   playerMovement: {fileID: 1513089507}
 --- !u!114 &1513089507
