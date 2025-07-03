@@ -225,7 +225,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7125365}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7125367}
+        m_TargetAssemblyTypeName: button, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: dena
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7125365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,7 +867,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1764376152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1764376155}
+        m_TargetAssemblyTypeName: button, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ndaru
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1764376152
 MonoBehaviour:
   m_ObjectHideFlags: 0

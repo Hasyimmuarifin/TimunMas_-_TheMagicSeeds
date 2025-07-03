@@ -27,10 +27,76 @@ EditorBuildSettings:
     path: Assets/Scenes/level1.unity
     guid: 8c5ac13f0e141c84db183e5cbe621dfd
   - enabled: 1
-    path: Assets/Scenes/credit/dena.unity
-    guid: 1656dd5e974d7fb44b0da9c8b2b98ab4
+    path: Assets/Scenes/Lempar1.unity
+    guid: 7fc3b924e5c5ce8499ffb99cd2422fd0
   - enabled: 1
     path: Assets/Scenes/loselevel1.unity
     guid: 55f797aafd98b044e93a17cfda3ef9bb
+  - enabled: 1
+    path: Assets/Scenes/loselempar1.unity
+    guid: 3ba09e9415f200841b41609aa68bede4
+  - enabled: 1
+    path: Assets/Scenes/level2.unity
+    guid: 7d453e00e2849044d97b7f2b67952a26
+  - enabled: 1
+    path: Assets/Scenes/Lempar2.unity
+    guid: 9628d5d9e99a17a4892cc9b6362ce4d0
+  - enabled: 1
+    path: Assets/Scenes/loselevel2.unity
+    guid: 4e922ccd2b079c64ea6ae54655e68d2d
+  - enabled: 1
+    path: Assets/Scenes/loselempar2.unity
+    guid: c8600431ebc03e94da352283b558be48
+  - enabled: 1
+    path: Assets/Scenes/level3.unity
+    guid: ef17acb7a60721d44a4cc50529b290cc
+  - enabled: 1
+    path: Assets/Scenes/Lempar3.unity
+    guid: 24e3fe1db58fb18448704c415d2ce2a6
+  - enabled: 1
+    path: Assets/Scenes/loselevel3.unity
+    guid: 23ab1c367057a5948a121db0216de60c
+  - enabled: 1
+    path: Assets/Scenes/loselempar3.unity
+    guid: 78fc6896c60e0a34a8bb52936dd2da8d
+  - enabled: 1
+    path: Assets/Scenes/level4.unity
+    guid: 26b0077fada952241819937bf5fc4dbc
+  - enabled: 1
+    path: Assets/Scenes/Lempar4.unity
+    guid: f3d4671a22b20804c8ebfa81e21cb977
+  - enabled: 1
+    path: Assets/Scenes/loselevel4.unity
+    guid: c0fdef5e2dc1ad4469a8185f8858f1ed
+  - enabled: 1
+    path: Assets/Scenes/loselempar4.unity
+    guid: 090c90006d96c2c47979d0e5245807f0
+  - enabled: 1
+    path: Assets/Scenes/nextToLevel2.unity
+    guid: 1a944942107e2844a97cb9feabd7890e
+  - enabled: 1
+    path: Assets/Scenes/nextToLevel3.unity
+    guid: ad530fc9b6c31b441ba200ba8729b8a7
+  - enabled: 1
+    path: Assets/Scenes/nextToLevel4.unity
+    guid: 7d00be3c2beb3b044bda58340d88467e
+  - enabled: 1
+    path: Assets/Scenes/ending.unity
+    guid: d885913b06ad3524991a513b937db1ed
+  - enabled: 1
+    path: Assets/Scenes/credit/dena.unity
+    guid: 1656dd5e974d7fb44b0da9c8b2b98ab4
+  - enabled: 1
+    path: Assets/Scenes/credit/hasyim.unity
+    guid: dc1ebc15bf0a8a042be7555621016974
+  - enabled: 1
+    path: Assets/Scenes/credit/ndaru.unity
+    guid: 7a0100c0e993de244b241395193368ca
+  - enabled: 1
+    path: Assets/Scenes/credit/dzaky.unity
+    guid: 9672518642f8c764596bced605fe06b7
+  - enabled: 1
+    path: Assets/Scenes/credit/syakura.unity
+    guid: 860ff639dd9881445a28d6c7592f057c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

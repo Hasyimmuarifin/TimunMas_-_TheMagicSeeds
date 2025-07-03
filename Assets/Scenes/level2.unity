@@ -2495,7 +2495,7 @@ MonoBehaviour:
   sceneMenang: play
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}
-  groundScroller: {fileID: 530483749}
+  groundScroller: {fileID: 386989206}
   isDead: 0
 --- !u!95 &435276757
 Animator:

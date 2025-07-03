@@ -41,6 +41,10 @@ public class GroundScroller : MonoBehaviour
 
     void Start()
     {
+        // Reset static variables
+        loopCount = 0;
+        hasTriggeredPanel = false;
+
         if (backsoundGameSource != null)
         {
             backsoundGameSource.loop = true;

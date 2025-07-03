@@ -3311,7 +3311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f676068cd687dc64489b8e2ca97e801f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   jumpForce: 13
   playerHealth: {fileID: 0}
   longRunThreshold: 0.5
@@ -3321,7 +3321,7 @@ MonoBehaviour:
   sceneMenang: play
   jumpAudioSource: {fileID: 435276760}
   crashAudioSource: {fileID: 66089393}
-  groundScroller: {fileID: 0}
+  groundScroller: {fileID: 386989206}
   isDead: 0
 --- !u!95 &435276757
 Animator:
