@@ -7,30 +7,27 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/title.unity
-    guid: ab724188320e33b42904afe24e3137e9
+    guid: cbe1bfb3540d12544b59d0a941acea15
   - enabled: 1
     path: Assets/Scenes/loading.unity
-    guid: c5bf381ccf3576d49b757940f86fa801
+    guid: fa87980b27ccf8a4a860a1345c8499d9
   - enabled: 1
     path: Assets/Scenes/play_awal.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: eab295739f7fd9c4d8b782ee3ec0c965
   - enabled: 1
     path: Assets/Scenes/prolog1.unity
-    guid: c6910e829e2980f419f5ecba8a463294
+    guid: 3892dad81c29b9f48810406e40483799
   - enabled: 1
     path: Assets/Scenes/prolog2.unity
-    guid: 3951f4490291dc54ca4c137d3423c9c3
+    guid: aa5a6ba4273c3b94ca9623f1d9359afb
   - enabled: 1
     path: Assets/Scenes/play.unity
-    guid: 774f4541fb7f2a14286e324641fb7f63
+    guid: ae78244cce27bd04995bb832d77ed1e1
   - enabled: 1
     path: Assets/Scenes/level1.unity
-    guid: 9fad3d35bd5467b47855dd71728a1c52
+    guid: 8c5ac13f0e141c84db183e5cbe621dfd
   - enabled: 1
     path: Assets/Scenes/credit/dena.unity
-    guid: 8cc4d858c15db284fae3219bb6c77ae9
-  - enabled: 1
-    path: Assets/Scenes/credit/hasyim.unity
-    guid: 2a2a53f3a9e575847840c8912edb3395
+    guid: 1656dd5e974d7fb44b0da9c8b2b98ab4
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
