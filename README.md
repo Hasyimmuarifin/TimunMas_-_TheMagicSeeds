@@ -31,14 +31,14 @@ Gunakan biji-bijian ajaib untuk memperlambat Buto Ijo! Waktu dan strategi sangat
 
 - Total **4 level**
   <p align="center">
-    <img src="https://github.com/user-attachments/assets/3c0e1996-a447-4ce2-94e8-4dd9501401c7" width="220"/>
-    <img src="https://github.com/user-attachments/assets/5f3b4379-ec53-4037-b766-d99e7db0ccae" width="220"/>
-    <img src="https://github.com/user-attachments/assets/03668d29-f84f-4b70-adf3-9c95cb0cf285" width="220"/>
-    <img src="https://github.com/user-attachments/assets/881606c0-589d-4979-8037-8cde867bb71d" width="220"/>
-    <img src="https://github.com/user-attachments/assets/e455af2a-7bd7-4b22-bca9-31f2d01d4e2b" width="220"/>
-    <img src="https://github.com/user-attachments/assets/a9c19e1a-bd8f-4343-b4eb-439977df4572" width="220"/>
-    <img src="https://github.com/user-attachments/assets/dd620c8a-323a-4dd1-854a-c5747f5dc5b8" width="220"/>
-    <img src="https://github.com/user-attachments/assets/cc605c93-b837-4d0e-9845-e73e4a26e4b6" width="220"/>
+    <img src="https://github.com/user-attachments/assets/3c0e1996-a447-4ce2-94e8-4dd9501401c7" width="180"/>
+    <img src="https://github.com/user-attachments/assets/5f3b4379-ec53-4037-b766-d99e7db0ccae" width="180"/>
+    <img src="https://github.com/user-attachments/assets/03668d29-f84f-4b70-adf3-9c95cb0cf285" width="180"/>
+    <img src="https://github.com/user-attachments/assets/881606c0-589d-4979-8037-8cde867bb71d" width="180"/>
+    <img src="https://github.com/user-attachments/assets/e455af2a-7bd7-4b22-bca9-31f2d01d4e2b" width="180"/>
+    <img src="https://github.com/user-attachments/assets/a9c19e1a-bd8f-4343-b4eb-439977df4572" width="180"/>
+    <img src="https://github.com/user-attachments/assets/dd620c8a-323a-4dd1-854a-c5747f5dc5b8" width="180"/>
+    <img src="https://github.com/user-attachments/assets/cc605c93-b837-4d0e-9845-e73e4a26e4b6" width="180"/>
   </p>
 - Setiap level memiliki **tingkat kesulitan yang meningkat**
 - Kecepatan permainan akan bertambah seiring progres pemain
